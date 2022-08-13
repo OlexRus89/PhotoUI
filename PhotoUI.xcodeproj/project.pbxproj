@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E86599928A6CF7C00EC86A3 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E86599828A6CF7C00EC86A3 /* PersistenceController.swift */; };
+		5E86599C28A6CF8800EC86A3 /* NewNCFU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E86599A28A6CF8800EC86A3 /* NewNCFU.xcdatamodeld */; };
 		5E8813BE28A67CF0004F006E /* PhotoUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8813BD28A67CF0004F006E /* PhotoUIApp.swift */; };
 		5E8813C028A67CF0004F006E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8813BF28A67CF0004F006E /* ContentView.swift */; };
 		5E8813C228A67CF3004F006E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8813C128A67CF3004F006E /* Assets.xcassets */; };
 		5E8813C528A67CF3004F006E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8813C428A67CF3004F006E /* Preview Assets.xcassets */; };
+		5E8813CF28A68535004F006E /* PhotosUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8813CE28A68535004F006E /* PhotosUIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E86599828A6CF7C00EC86A3 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		5E86599B28A6CF8800EC86A3 /* NewNCFU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewNCFU.xcdatamodel; sourceTree = "<group>"; };
 		5E8813BA28A67CF0004F006E /* PhotoUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8813BD28A67CF0004F006E /* PhotoUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUIApp.swift; sourceTree = "<group>"; };
 		5E8813BF28A67CF0004F006E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E8813C128A67CF3004F006E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E8813C428A67CF3004F006E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E8813CD28A67DB6004F006E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5E8813CE28A68535004F006E /* PhotosUIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosUIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,13 @@
 		5E8813BC28A67CF0004F006E /* PhotoUI */ = {
 			isa = PBXGroup;
 			children = (
+				5E8813CD28A67DB6004F006E /* Info.plist */,
 				5E8813BD28A67CF0004F006E /* PhotoUIApp.swift */,
 				5E8813BF28A67CF0004F006E /* ContentView.swift */,
 				5E8813C128A67CF3004F006E /* Assets.xcassets */,
+				5E8813CE28A68535004F006E /* PhotosUIConfiguration.swift */,
+				5E86599828A6CF7C00EC86A3 /* PersistenceController.swift */,
+				5E86599A28A6CF8800EC86A3 /* NewNCFU.xcdatamodeld */,
 				5E8813C328A67CF3004F006E /* Preview Content */,
 			);
 			path = PhotoUI;
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E86599C28A6CF8800EC86A3 /* NewNCFU.xcdatamodeld in Sources */,
+				5E8813CF28A68535004F006E /* PhotosUIConfiguration.swift in Sources */,
 				5E8813C028A67CF0004F006E /* ContentView.swift in Sources */,
 				5E8813BE28A67CF0004F006E /* PhotoUIApp.swift in Sources */,
+				5E86599928A6CF7C00EC86A3 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +284,16 @@
 				DEVELOPMENT_TEAM = 8B34ZH26CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoUI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app lets your brouse and edit your";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app lets your brouse";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +318,16 @@
 				DEVELOPMENT_TEAM = 8B34ZH26CA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoUI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app lets your brouse and edit your";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app lets your brouse";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +363,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5E86599A28A6CF8800EC86A3 /* NewNCFU.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5E86599B28A6CF8800EC86A3 /* NewNCFU.xcdatamodel */,
+			);
+			currentVersion = 5E86599B28A6CF8800EC86A3 /* NewNCFU.xcdatamodel */;
+			path = NewNCFU.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5E8813B228A67CF0004F006E /* Project object */;
 }
